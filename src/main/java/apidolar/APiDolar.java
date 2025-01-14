@@ -54,9 +54,9 @@ public class APiDolar {
             int count = 0;
             while (matcher.find()) {
                 if (count == 0) {
-                    venta = matcher.group(1).trim();
-                } else if (count == 1) {
                     compra = matcher.group(1).trim();
+                } else if (count == 1) {
+                    venta = matcher.group(1).trim();
                 }
                 count++;
             }
